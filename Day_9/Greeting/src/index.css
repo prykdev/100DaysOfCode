@@ -1,0 +1,24 @@
+body{
+  background-color: aqua;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+div{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -30px;
+}
+h1{
+padding: 20px 20px;
+background-color: #ffe9c5;  border-radius: 20px;
+color: #fa9191;
+border-radius: 20px;
+}
+span{
+  color: #fa9191;
+}
