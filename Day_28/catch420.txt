@@ -1,0 +1,31 @@
+function runProgram(input){
+for(var i=0;i<input.length;i++)
+{
+  if(input[i]=='4'&& input[i+1]=='2'&& input[i+2]=='0'){
+      flag=1;
+    break;
+  }
+  else
+    flag=0;  
+}
+  if(flag==1)
+    console.log("Caught");
+  else
+    console.log("Escaped");
+}
+
+process.stdin.resume();
+process.stdin.setEncoding("ascii");
+let read = "";
+process.stdin.on("data", function (input) {
+    read += input;
+});
+process.stdin.on("end", function () {
+	read = read.replace(/\n$/,"")
+   runProgram(read);
+});
+process.on("SIGINT", function () {
+    read = read.replace(/\n$/,"")
+    runProgram(read);
+    process.exit(0);
+});
