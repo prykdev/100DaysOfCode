@@ -1,0 +1,14 @@
+ #container{
+        display:grid;
+        grid-template-columns: repeat(9,11%) ;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 10%;
+    }
+input{
+    
+        height: 60px;
+        text-align: center;
+        font-size:130%
+    }
+
